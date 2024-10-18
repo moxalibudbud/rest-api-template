@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "module": "node16",
+    "outDir": "dist",
+    "removeComments": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6",
+    "moduleResolution": "node16",
+    "resolveJsonModule": true,
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "paths": {
+      "@controller": ["./src/controller"],
+      "@controller/*": ["./src/controller/*"],
+      "@config": ["./src/config"],
+      "@config/*": ["./src/config/*"],
+      "@lib": ["./src/lib"],
+      "@lib/*": ["./src/lib/*"],
+      "@routes": ["./src/routes"],
+      "@routes/*": ["./src/lroutesib/*"],
+      "@service": ["./src/service"],
+      "@service/*": ["./src/service/*"],
+      "@utils": ["./src/utils"],
+      "@utils/*": ["./src/utils/*"],
+      "@tests": ["./src/tests"],
+      "@tests/*": ["./src/tests/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "src/tests/**/*"
+  ],
+  "exclude": [],
+  "ts-node": {
+    // Do not forget to `npm i -D tsconfig-paths`
+    "require": ["tsconfig-paths/register"]
+  }
+}
